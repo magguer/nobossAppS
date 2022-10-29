@@ -1,0 +1,147 @@
+.hsidenav {
+
+    background: #232323;
+    transition: all .05s ease;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 0rem;
+    height: 100vh;
+    box-shadow: 0.063rem 0 1.25rem 0 #151515;
+
+    .logo-noboss-blanco {
+
+        margin-left: 28%;
+        width: 48%;
+        cursor: pointer;
+
+    }
+
+    .icono-menu {
+        display: flex;
+        align-items: center;
+        padding: 8px 0 0 8px;
+        width: 100%;
+
+
+        .boton-icono-menu {
+            background: transparent;
+            text-align: center;
+            width: 2rem;
+            min-width: 2rem;
+            border-radius: 0.313rem;
+            padding: 0.313rem;
+            cursor: pointer;
+            border: none;
+        }
+
+        .texto-menu {
+            margin-left: 1.5rem;
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+
+        }
+
+        .cerrado-menu {
+
+            margin-right: 15px;
+            cursor: pointer;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: transparent;
+            border: none;
+
+            .bi {
+
+                color: #fff;
+                font-size: 20px;
+
+            }
+
+            .bi-time {
+
+                color: #fff;
+                font-size: 24px;
+            }
+
+        }
+
+    }
+
+    .icono-menu:hover {
+
+        .boton-icono-menu {
+            background-color: rgb(61, 61, 61);
+
+        }
+
+    }
+}
+
+
+.hsidenav-collapsed {
+
+    width: 20rem;
+
+}
+
+.menu-sidenav-nav {
+
+    list-style: none;
+    padding: 0.938rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 3.65rem);
+    cursor: pointer;
+
+    .menu-sidenav-item {
+
+        width: 100%;
+        margin-bottom: 0.625rem;
+
+
+
+    }
+
+    .menu-sidenav-link {
+
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        color: #f3f3f3;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all .3s ease;
+
+        .menu-sideav-icon-link {
+
+            font-size: 22px;
+            width: 2rem;
+            min-width: 2rem;
+            margin: 0 0.5rem;
+            text-align: center;
+        }
+
+        .menu-sidenav-texto-link {
+
+            margin-left: 1.5rem;
+
+        }
+    }
+
+
+    .menu-sidenav-item:hover {
+        .menu-sidenav-link {
+
+            background-color: rgb(69, 69, 69);
+            color: #089d84;
+
+        }
+
+
+    }
+}

@@ -1,0 +1,22 @@
+
+<div class="hsidenav"  [ngClass]="collapsed ? '': 'hsidenav-collapsed'">
+    <div class="icono-menu" (click)="menuToogle($event)">
+        <img class="boton-icono-menu" src="https://firebasestorage.googleapis.com/v0/b/noboss-app.appspot.com/o/nobossAppSimple%2Frecursos%2Ficonos%2Fmenu%20icon.png?alt=media&token=278bc2a7-be05-4307-a700-1bcc8c33e946" alt="">
+        <div class="logo" [routerLink]="''">
+            <img src="https://firebasestorage.googleapis.com/v0/b/noboss-app.appspot.com/o/nobossAppSimple%2Frecursos%2Flogo%2FNobossPNGLogo%20%20blanco.png?alt=media&token=59911c26-fdf9-4ee6-9474-1b978c8b1b67"
+                alt="logo-nobbos-blanco" class="logo-noboss-blanco">
+        </div>
+        <button class="cerrado-menu" *ngIf="!collapsed">
+            <i class="bi bi-x"></i>
+        </button>
+    </div>
+    <ul class="menu-sidenav-nav">
+        <li class="menu-sidenav-item" *ngFor="let data of menunoboss">
+            <a class="menu-sidenav-link" [routerLink]="[data.routerLink]">
+                <i class="menu-sideav-icon-link" *ngIf="!collapsed" [class]="data.icon"></i>
+                <span class="menu-sidenav-texto-link" *ngIf="!collapsed">{{data.label}}</span>
+            </a>
+        </li>
+    </ul>
+
+</div>

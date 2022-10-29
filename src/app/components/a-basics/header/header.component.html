@@ -1,0 +1,72 @@
+<div class="div-header">
+    <header>
+
+
+
+        <!-- Logo Noboss -->
+        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-2">
+            <div class="div-logo" [routerLink]="''">
+                <img src="https://firebasestorage.googleapis.com/v0/b/noboss-app.appspot.com/o/nobossAppSimple%2Frecursos%2Flogo%2FNobossPNGLogo%20%20blanco.png?alt=media&token=59911c26-fdf9-4ee6-9474-1b978c8b1b67"
+                    alt="logo-nobbos-blanco" class="logo-noboss-blanco">
+            </div>
+        </div>
+
+        <!-- Buscador -->
+        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-6">
+            <div class="div-buscador">
+                <div class="buscador">
+                    <input type="text" name="buscador" id="buscador" placeholder="Buscar proyectos, rubros, zonas...">
+                    <!--- Explorador -->
+                    <div class="explorador" [routerLink]="'/explorador'">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/noboss-app.appspot.com/o/nobossAppSimple%2Frecursos%2Ficonos%2Ficono%20explorador%20de%20proyectos%20blanco.png?alt=media&token=a9ae2846-f5af-4aa7-9c60-681f478c967a"
+                            alt="explorador-icon" class="explorador-icon">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NavBar -->
+        <div class="col-sm-6 col-md-5 col-lg-5 col-xl-3">
+            <div class="body-navbar">
+                <div class="navbar">
+                    <!--- Market --->
+                    <div class="market-icono" [routerLink]="'/proyectos/marketpage'">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/noboss-app.appspot.com/o/nobossAppSimple%2Frecursos%2Ficonos%2Fcarrito%201.png?alt=media&token=9aad05a4-5039-40b8-9a24-585df898f7dd"
+                            alt="market-icon" class="market-icon">
+                    </div>
+                    <!--- Home --->
+                    <div class="home" [routerLink]="'/proyectos/panelgestion'">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/noboss-app.appspot.com/o/nobossAppSimple%2Frecursos%2Ficonos%2F01-home-icon-blanco.png?alt=media&token=0aea7cfe-3a83-443d-a059-f04ec48449cd"
+                            alt="home-icon" class="home-icon">
+                    </div>
+                    <!--- Toggle Navbar --->
+                    <div class="toggle-navbar">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/noboss-app.appspot.com/o/nobossAppSimple%2Frecursos%2Ficonos%2F01-home-icon-blanco.png?alt=media&token=0aea7cfe-3a83-443d-a059-f04ec48449cd"
+                            alt="toggle-icon" class="toggle-icon">
+                    </div>
+                    <!--- Login --->
+                    <div class="user-login" [routerLink]="'/login'" >
+                        <a>Acceder</a>
+                        <img src="https://firebasestorage.googleapis.com/v0/b/noboss-app.appspot.com/o/nobossAppSimple%2Frecursos%2Ficonos%2Ficono%20usuario%20blanco.png?alt=media&token=3ad98721-d5d8-4ff6-907c-25c945a71d4d"
+                            alt="user-icon" class="user-icon">
+                    </div>
+
+                    <!--- Logout --->
+                    <div>
+                        <a>Salir</a>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </header>
+
+
+</div>
+
+<app-menunoboss class="hsidenav"></app-menunoboss>
